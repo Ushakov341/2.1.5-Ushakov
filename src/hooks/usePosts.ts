@@ -20,13 +20,10 @@ export function usePosts() {
   };
 
   useEffect(() => {
-    // Initial fetch
     fetchPosts();
 
-    // Set up interval to fetch posts every 5 seconds
     const interval = setInterval(fetchPosts, 5000);
 
-    // Cleanup interval on component unmount
     return () => clearInterval(interval);
   }, []);
 
