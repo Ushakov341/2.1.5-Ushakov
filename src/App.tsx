@@ -9,12 +9,12 @@ function App() {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <h1 className={styles.title}>
-          Posts:
+          Посты:
         </h1>
         
         {loading ? (
           <div className={styles.loading}>
-            Loading posts...
+            Загрузка постов...
           </div>
         ) : (
           <div className={styles.postsList}>
